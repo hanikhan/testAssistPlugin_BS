@@ -29,3 +29,9 @@
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
 
+Steps to integrate this repo to work with Jenkins:
+- Install the BrowserStack Plugin in Jenkins
+- Create a new Maven Job that clones this repo and check the BrowserStack option
+- Run any test mentioned above(for example: mvn test -P parallel)
+- Check option for reports in post build actions
+Detailed instruction for job setup can be found here: https://www.browserstack.com/automate/jenkins
